@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#10271D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- gear -->
+  <circle cx="22" cy="22" r="8"></circle>
+  <path d="M22 10 V6"></path>
+  <path d="M22 38 V34"></path>
+  <path d="M10 22 H6"></path>
+  <path d="M38 22 H34"></path>
+  <path d="M15 15 L12 12"></path>
+  <path d="M29 29 L32 32"></path>
+  <path d="M29 15 L32 12"></path>
+  <path d="M15 29 L12 32"></path>
+
+  <!-- solar panel -->
+  <rect x="34" y="26" width="22" height="12" rx="2"></rect>
+  <path d="M34 26 L45 14 L56 26"></path>
+  <path d="M45 14 V6"></path>
+
+</svg>
