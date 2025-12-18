@@ -97,7 +97,7 @@ export default function About({ text = {} }) {
 
   // defensive defaults
   const countries = stats?.countries ?? 10;
-  const projects = stats?.projects ?? 35;
+  const projects = stats?.projects ?? 25;
 
   return (
     <section className="prs-about-section" id="about">
@@ -122,16 +122,16 @@ export default function About({ text = {} }) {
        
           <h4 className="about-title">{title || "Notre expertise et\nnotre adaptabilité"}</h4>
           <div className="about-stats" ref={statsRef}>
-            <div className="stat">
+            {/*<div className="stat">
               <div className="stat-label">Years</div>
               <div className="stat-number">
                 <AnimatedCounter target={countries} start={startCounters} duration={1200} />
                 <span className="plus">+</span>
               </div>
-            </div>
+            </div>*/}
 
             <div className="stat">
-              <div className="stat-label">Projets</div>
+              <div className="stat-label">Years of Experience</div>
               <div className="stat-number">
                 <AnimatedCounter target={projects} start={startCounters} duration={1200} />
                 <span className="plus">+</span>

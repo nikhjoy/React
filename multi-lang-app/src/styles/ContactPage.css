@@ -1,0 +1,155 @@
+/* Page container */
+.contact-root {
+  background: #eaf4ee;
+  padding: 20px 36px;
+}
+
+.contact-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 40px;
+}
+
+/* LEFT SECTION */
+.contact-left {
+  padding-left: 10px;
+}
+
+.contact-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3f594f;
+  margin-bottom: 6px;
+}
+
+.contact-title {
+  font-size: 62px;
+  color: #0b261d;
+  margin: 0 0 12px;
+}
+
+.contact-desc {
+  color: #4e6a61;
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.email-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #7ab14a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-email {
+  color: #0b261d;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* RIGHT SECTION – CARD */
+.contact-card {
+  background: white;
+  padding: 36px;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.field-icon {
+  width: 24px;
+  color: #6b8b7c;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.field-input {
+  flex: 1;
+  border: 0;
+  border-bottom: 1px solid rgba(120, 140, 130, 0.25);
+  padding: 6px 4px;
+  font-size: 15px;
+  background: transparent;
+  outline: none;
+}
+
+.field-input::placeholder {
+  color: rgba(91, 109, 103, 0.6);
+}
+
+.field-input:focus {
+  border-bottom-color: rgba(120, 140, 130, 0.55);
+}
+
+/* TEXTAREA */
+.textarea {
+  min-height: 90px;
+  resize: vertical;
+  padding-top: 10px;
+}
+
+/* SUBMIT BUTTON */
+.btn-submit {
+  margin-top: 16px;
+  background: #7ab14a;
+  border: none;
+  padding: 12px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 6px 16px rgba(122, 177, 74, 0.2);
+  width: fit-content;
+  align-self: flex-start;   
+}
+
+.btn-submit:active {
+  transform: translateY(1px);
+}
+
+/* SENT MESSAGE */
+.sent-msg {
+  margin-top: 8px;
+  color: #2d6a3e;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

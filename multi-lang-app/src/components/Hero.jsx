@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../assets/images/e1.jpg";
+import heroImg from "../assets/images/w1.jpg";
 
 export default function Hero({ text }) {
   return (
@@ -11,7 +11,7 @@ export default function Hero({ text }) {
           <div className="hero-left">
             <h1>{text.title}</h1>
             <p>{text.description}</p>
-            <a href="#" className="hero-button">{text.button}</a>
+            <a href="#about" className="hero-button">{text.button}</a>
           </div>
 
           {/* RIGHT */}

@@ -13,7 +13,7 @@ export default {
     logoAlt: "PRS International"
   },
   hero: {
-    title: "Power\nRefurbishment\nSolutions",
+    title: "PRS International",
     description: "PRS International est une société ...",
     button: "En savoir plus"
   },
@@ -124,7 +124,10 @@ export default {
   footer: {
     bannerTitleLine1: "Fournisseurs de services innovants et fiables",
     bannerTitleLine2: "PRS International",
-    email: "info@prsint.fr"
+    email: "info@prsint.fr",
+    about: "À propos de nous",
+    services: "Nos Services",
+    logoAlt: "PRS International"
   },
   network: {
     pageTitle: "Matériel de ligne de distribution électrique",
@@ -171,7 +174,24 @@ export default {
   },
   network: {
     pageTitle: "Matériel de ligne de distribution électrique",
-    intro: "En matière de ligne...",
+     intro: `<b>Forte de plus de 25 ans d’expérience terrain en vente internationale et en direction d’entreprise, PRS International repose sur des bases solides alliant savoir-faire industriel et connaissance approfondie des marchés.</b><br/><br/>
+
+Son fondateur a exercé des responsabilités commerciales dans des secteurs variés — du négoce B2B à l’exportation de matériel électrique vers la région MENA — et a dirigé plusieurs sociétés spécialisées dans l’approvisionnement technique, notamment plus de dix années dans le Golfe.<br/><br/>
+
+Cette expérience guide notre méthode : des prix compétitifs, des sources fiables, une logistique fluide et une communication directe. Nos clients nous choisissent non pas pour des promesses, mais pour des résultats concrets, une transparence totale et une fiabilité constante.<br/><br/>
+
+PRS International collabore étroitement avec :<br/>
+
+• Des fabricants reconnus en Europe (France, Pologne, Allemagne, etc.)<br/>
+
+• Des fournisseurs asiatiques respectant les normes techniques export<br/>
+
+• Des transitaires spécialisés dans les expéditions vers le Moyen-Orient et l’Afrique<br/><br/>
+
+<b>Notre priorité : </b> garantir des produits fiables, des livraisons ponctuelles, une documentation complète et conforme — et surtout, les meilleurs prix du marché.`,
     sections: networkSections
+  },
+  contact: {
+
   }
 };

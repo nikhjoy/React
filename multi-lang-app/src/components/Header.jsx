@@ -1,9 +1,9 @@
 // src/components/Header.jsx
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/PRS-LOGO.png";
 import { texts } from "../text";
-import { getLocaleFromPath } from "../utils/locale";
+import { getLocaleFromPath, changeLocaleInPath } from "../utils/locale";
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -35,10 +35,29 @@ export default function Header() {
             {t.navNetwork || "Network"}
           </Link>
 
+          <Link to={toLocalePath("contact")} className="nav-link">
+            {t.navContact || "Contact"}
+          </Link>
+
           <div className="lang-switch">
-            <Link to="/fr" className={locale === "fr" ? "lang active" : "lang"}>FR</Link>
-            <Link to="/en" className={locale === "en" ? "lang active" : "lang"}>EN</Link>
-            <Link to="/esp" className={locale === "esp" ? "lang active" : "lang"}>ESP</Link>
+            <Link
+              to={changeLocaleInPath(pathname, "fr")}
+              className={locale === "fr" ? "lang active" : "lang"}
+            >
+              FR
+            </Link>
+            <Link
+              to={changeLocaleInPath(pathname, "en")}
+              className={locale === "en" ? "lang active" : "lang"}
+            >
+              EN
+            </Link>
+            <Link
+              to={changeLocaleInPath(pathname, "esp")}
+              className={locale === "esp" ? "lang active" : "lang"}
+            >
+              ESP
+            </Link>
           </div>
         </nav>
       </div>

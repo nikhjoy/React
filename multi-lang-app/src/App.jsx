@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Network from './pages/Network';
 import ServicesPage from "./pages/ServicesPage";
+import ContactPage from "./pages/ContactPage";
 import LocaleGuard from './components/LocaleGuard'; // <- import the guard
 
 
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="home" element={<Home />} />
           <Route path="network" element={<Network />} />
           <Route path="services" element={<ServicesPage />} />
+          <Route path="contact" element={<ContactPage />} />
           {/* more pages... */}
           <Route path="*" element={<Home />} />
         </Route>

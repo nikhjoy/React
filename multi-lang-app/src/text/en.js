@@ -14,7 +14,7 @@ export default {
   },
 
   hero: {
-    title: "Power Refurbishment Solutions",
+    title: "PRS International",
     description:
       "PRS International is a French company founded with a clear mission...",
     button: "Learn more"
@@ -22,8 +22,8 @@ export default {
   about: {
     title: "French export expertise, serving demanding professionals.",
     desc: "",
-    overlayTitle: "Performance,\nQualité et\nFiabilité",
-    stats: { countries: 10, projects: 35 },
+    overlayTitle: "Performance,\nQuality and\nReliability",
+    stats: { projects: 25 },
 
     // NEW: details block (use strings and arrays for bullets)
     details: {
@@ -104,35 +104,38 @@ export default {
   },
   network: {
     pageTitle: "Distribution Line Equipment",
-    intro: `PRS International is a newly established company. We believe in full transparency: we don’t have a portfolio of completed projects yet under this brand name.<br/><br/>
+    intro: `<b>With over 25 years of hands-on experience in international sales and business leadership, PRS International was built on a solid foundation of industry knowledge and market insight.</b><br/><br/>
 
-What sets us apart is the background of our founder, who brings over 22 years of experience in sales and business management. This includes commercial roles in B2B wholesale, five years managing electrical equipment exports to the MENA region, and over a decade managing four different companies—two of which specialized in electrical material distribution in Qatar.<br/><br/>
+Our founder has led commercial operations across diverse sectors — from B2B wholesale and electrical exports to the MENA region, to managing multiple companies specialized in industrial supply and distribution, including over a decade in the Gulf region.<br/><br/>
 
-PRS International builds on this practical experience with a simple approach: competitive pricing, reliable service, clear communication, and letting our customers decide for themselves. At PRS International, we don’t sell promises — we build real trust on solid ground.<br/><br/>
+This experience drives our approach: competitive pricing, reliable sourcing, seamless logistics, and direct communication. We believe customers should choose us not because of promises, but because of performance, transparency, and consistent results.<br/><br/>
 
-PRS International works closely with:<br/>
+PRS International collaborates closely with:<br/>
 
-• Manufacturers across Europe (France, Poland, Germany, etc.)<br/>
+• Leading manufacturers across Europe (France, Poland, Germany, etc.)<br/>
 
-• Technically compliant suppliers from Asia<br/>
+• Technically compliant suppliers across Asia<br/>
 
-• Freight forwarders specialized in shipping to the Middle East and Africa<br/><br/>
+• Freight forwarders specialized in shipments to the Middle East and Africa<br/><br/>
 
-Our priority: To guarantee reliable products, on-time deliveries, complete documentation — and above all, the best possible prices.`,
+<b>Our priority:</b> to guarantee reliable products, on-time deliveries, complete and compliant documentation — and above all, the best possible prices.`,
     sections: networkSections
   },
   featureHero: {
-  eyebrow: "POWER, OIL & GAS",
-  // the main hero heading (use \n if you want line breaks like in FR)
-  title: "Precision in demonstrating excellence in energy,\npetroleum and gas",
-  // optional small subtitle/eyebrow
-  // you can keep same structure as fr.js
-},
+    eyebrow: "POWER, OIL & GAS",
+    // the main hero heading (use \n if you want line breaks like in FR)
+    title: "Precision in demonstrating excellence in energy,\npetroleum and gas",
+    // optional small subtitle/eyebrow
+    // you can keep same structure as fr.js
+  },
 
-footer: {
-  bannerTitleLine1: "Trusted, innovative service providers",
-  bannerTitleLine2: "PRS International",
-  email: "info@prsint.fr"
-}
+  footer: {
+    bannerTitleLine1: "Reliable and innovative service providers",
+    bannerTitleLine2: "PRS International",
+    email: "info@prsint.fr",
+    about: "About Us",
+    services: "Our Services",
+    logoAlt: "PRS International"
+  }
 
 };

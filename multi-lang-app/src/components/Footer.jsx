@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import logo from "../assets/images/logo.jpg";
+import logo from "../assets/images/PRS-LOGO-W.png";
 import { texts } from "../text";
 import { getLocaleFromPath } from "../utils/locale";
 
@@ -42,7 +42,7 @@ export default function Footer() {
 
           <div className="footer-col footer-links">
             <Link to={toLocalePath()} className="footer-link">{t.about || "À propos de nous"}</Link>
-            <Link to={toLocalePath("services")} className="footer-link active">{t.services || "Nos services"}</Link>
+            <Link to={toLocalePath("services")} className="footer-link">{t.services || "Nos services"}</Link>
             <div className="footer-menu-icon">⋮</div>
           </div>
         </div>

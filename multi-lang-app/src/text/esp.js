@@ -15,7 +15,7 @@ export default {
   },
 
   hero: {
-    title: "Power Refurbishment Solutions",
+    title: "PRS International",
     description: "PRS International es una empresa francesa fundada con una misión clara...",
     button: "Saber más"
   },
@@ -24,7 +24,7 @@ export default {
     title: "La experiencia francesa en exportación, al servicio de los profesionales exigentes.",
     desc: "",
     // optional overlayTitle if you use it in About.jsx
-    overlayTitle: "Performance,\nQualité et\nFiabilité",
+    overlayTitle: "Rendimiento,\nCalidad y\nFiabilidad",
 
     // structured details for About section (Spanish)
     details: {
@@ -122,17 +122,34 @@ export default {
   },
   network: {
     pageTitle: "Equipos de línea de distribución",
-    intro: "Trabajamos con socios...",
+    intro: `<b>Con más de 22 años de experiencia directa en ventas internacionales y gestión empresarial, PRS International se basa en una trayectoria sólida y un profundo conocimiento del sector.</b><br/><br/>
+
+Su fundador ha ocupado cargos comerciales en múltiples sectores —desde el comercio B2B hasta la exportación de material eléctrico a la región MENA— y ha dirigido varias empresas especializadas en el suministro técnico, incluyendo más de una década en el Golfo.<br/><br/>
+
+Esa experiencia impulsa nuestro enfoque: precios competitivos, proveedores fiables, logística fluida y comunicación directa. Nuestros clientes nos eligen no por promesas, sino por resultados, transparencia y compromiso constante.<br/><br/>
+
+PRS International colabora estrechamente con: <br/>
+
+• Fabricantes líderes en Europa (Francia, Polonia, Alemania, etc.)<br/>
+
+• Proveedores asiáticos que cumplen con las normas técnicas internacionales<br/>
+
+• Transitarios especializados en envíos al Oriente Medio y África<br/><br/>
+
+<b>Nuestra prioridad:  </b> garantizar productos fiables, entregas puntuales, documentación completa y conforme — y sobre todo, los mejores precios posibles.`,
     sections: networkSections
   },
   featureHero: {
-  eyebrow: "POWER, OIL & GAS",
-  title: "Precisión en la demostración de la excelencia en energía,\npetóleo y gas"
-},
+    eyebrow: "POWER, OIL & GAS",
+    title: "Precisión en la demostración de la excelencia en energía,\npetóleo y gas"
+  },
 
-footer: {
-  bannerTitleLine1: "Proveedores de servicios innovadores y fiables",
-  bannerTitleLine2: "PRS International",
-  email: "info@prsint.fr"
-}
+  footer: {
+    bannerTitleLine1: "Proveedores de servicios innovadores y fiables",
+    bannerTitleLine2: "PRS International",
+    email: "info@prsint.fr",
+    about: "Sobre Nosotros",
+    services: "Nuestros Servicios",
+    logoAlt: "PRS International"
+  }
 };

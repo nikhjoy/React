@@ -890,12 +890,79 @@
 .services-page { padding: 60px 0; color: #21322d; }
 .services-page-header h1 { font-size: 30px; margin: 0 0 0.6rem; color: #052e28; }
 .services-intro { margin: 0 0 1.6rem; color: #3a4a45; font-size: 16px; line-height: 1.6; }
-.services-content { display: grid; gap: 1.6rem; }
-.services-section { background: #fff; padding: 20px 22px; border-radius: 10px; box-shadow: 0 6px 20px rgba(6,20,16,0.04); }
+.services-section { 
+  background: #fff; 
+  padding: 15px 22px; 
+  border-radius: 10px; 
+  box-shadow: 0 6px 20px rgba(6,20,16,0.04); 
+  grid-column: auto; 
+  break-inside: avoid;
+  margin-bottom: 16px; 
+}
 .services-section-title { margin: 0 0 0.6rem; font-size: 18px; color: #05322b; }
 .services-paragraph { margin: 0 0 0.9rem; font-size: 15px; line-height: 1.7; color: #32433e; white-space: pre-line; }
 .services-bullets { margin: 0; padding-left: 18px; color: #32433e; line-height: 1.6; font-size: 15px; }
 .services-bullets li { margin: 0.45rem 0; }
+
+.services-content {
+  column-count: 2;
+  row-gap: 16px;
+}
+
+/* Service 1 → left, spans both rows */
+.services-section:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+/* Service 2 → right top */
+.services-section:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Service 3 → right bottom */
+.services-section:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Reduce bottom padding for Service 2 and Service 3 */
+.services-section:nth-child(2),
+.services-section:nth-child(3) {
+  padding-bottom: 4px!important;   /* was effectively 20px */
+}
+
+/* Further compact Service 2 & 3 content */
+.services-section:nth-child(2) .services-paragraph,
+.services-section:nth-child(3) .services-paragraph {
+  margin-bottom: 0.4rem;   /* was 0.9rem */
+}
+
+.services-section:nth-child(2) .services-bullets li,
+.services-section:nth-child(3) .services-bullets li {
+  margin: 0.25rem 0;       /* was 0.45rem */
+}
+
+/* Remove extra space at very bottom */
+.services-section:nth-child(2) > *:last-child,
+.services-section:nth-child(3) > *:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Mobile reset */
+@media (max-width: 900px) {
+  .services-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .services-section {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
 
 @media (min-width: 992px) {
   .services-content { grid-template-columns: 1fr 1fr; }
