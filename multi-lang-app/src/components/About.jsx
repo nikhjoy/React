@@ -131,7 +131,7 @@ export default function About({ text = {} }) {
             </div>*/}
 
             <div className="stat">
-              <div className="stat-label">Years of Experience</div>
+              <div className="stat-label">{text?.stats?.years || "Years of Experience"}</div>
               <div className="stat-number">
                 <AnimatedCounter target={projects} start={startCounters} duration={1200} />
                 <span className="plus">+</span>

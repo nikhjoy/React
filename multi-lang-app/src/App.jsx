@@ -9,12 +9,13 @@ import Network from './pages/Network';
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import LocaleGuard from './components/LocaleGuard'; // <- import the guard
-
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <>
       <Header />
+      <ScrollToTop />
       <Routes>
         {/* root -> default locale under basename (/prs) */}
         <Route path="/" element={<Navigate to={`/${DEFAULT_LOCALE}`} replace />} />

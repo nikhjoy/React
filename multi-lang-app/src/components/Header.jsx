@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/images/PRS-LOGO.png";
+import logo from "../assets/images/prs_02.png";
 import { texts } from "../text";
 import { getLocaleFromPath, changeLocaleInPath } from "../utils/locale";
 

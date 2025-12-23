@@ -61,7 +61,7 @@ export default function Network() {
 
         {/* Page header */}
         <header className="network-header">
-          <h1 className="network-title">{t.pageTitle}</h1>
+          <h1 className="network-title"></h1>
           {t.intro && <p
   className="network-intro"
   dangerouslySetInnerHTML={{ __html: t.intro }}

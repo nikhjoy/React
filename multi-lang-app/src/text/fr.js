@@ -14,14 +14,17 @@ export default {
   },
   hero: {
     title: "PRS International",
-    description: "PRS International est une société ...",
+    description: "",
     button: "En savoir plus"
   },
   about: {
     title: "L’expertise française en export, au service des professionnels exigeants.",
     desc: "",
     overlayTitle: "Performance,\nQualité et\nFiabilité",
-    stats: { countries: 10, projects: 35 },
+    stats: {
+      years: "Années d’expérience",
+      projects: 25
+    },
 
     // new structured details (French)
     details: {
@@ -55,7 +58,7 @@ export default {
   },
   services: {
     title: "⚙️ Nos activités",
-    description: "Notre équipe expérimentée de spécialistes utilise une technologie de pointe pour garantir des livraisons conformes et ponctuelles.",
+    description: "Fort de plusieurs décennies d’expertise sectorielle, notre équipe applique des méthodes éprouvées et une logistique moderne pour garantir des produits conformes, traçables et livrés dans les délais — à chaque fois.",
     intro: "",
     cards: [
       {
@@ -118,19 +121,20 @@ export default {
     ]
   },
   featureHero: {
-    eyebrow: "POWER, OIL & GAS",
-    title: "Précision dans la démonstration de\nl'excellence dans l'énergie..."
+    eyebrow: "L’énergie n’a pas de frontières. L’expertise a une signature.",
+    title: "Tout commence par une exigence : celle du détail technique maîtrisé en France.\nChez PRS International, nous ne livrons pas uniquement du matériel électrique ; nous portons une promesse de fiabilité à l’échelle mondiale."
   },
   footer: {
-    bannerTitleLine1: "Fournisseurs de services innovants et fiables",
+    bannerTitleLine1: "Fournisseurs de produits innovants et fiables",
     bannerTitleLine2: "PRS International",
     email: "info@prsint.fr",
     about: "À propos de nous",
     services: "Nos Services",
-    logoAlt: "PRS International"
+    logoAlt: "PRS International",
+    contact: "Contactez-nous"
   },
   network: {
-    pageTitle: "Matériel de ligne de distribution électrique",
+    pageTitle: "",
     intro: "En matière de ligne de distribution électrique, nous collaborons avec des partenaires de confiance, sélectionnés pour leur expertise technique et la conformité de leurs équipements aux normes les plus strictes.",
     sections: [
       {
@@ -158,7 +162,30 @@ export default {
         ]
       },
       {
-        id: "accessories",
+        id: "cable-trays",
+        title: "Cable tray and accessories",
+        description: "Pour tout ce qui concerne les accessoires ...",
+        logos: [
+          { src: "/assets/logos/klauke.png", alt: "Klauke" },
+          { src: "/assets/logos/cembre.png", alt: "Cembre" },
+          { src: "/assets/logos/te.png", alt: "TE Connectivity" },
+          { src: "/assets/logos/legrand.png", alt: "Legrand" },
+          { src: "/assets/logos/schneider.png", alt: "Schneider Electric" },
+          { src: "/assets/logos/panduit.png", alt: "Panduit" },
+          { src: "/assets/logos/sicame.png", alt: "sicame" },
+          { src: "/assets/logos/Atkore.png", alt: "Atkore" },
+          { src: "/assets/logos/BasorLogo.jpg", alt: "BasorLogo" },
+          { src: "/assets/logos/efapel.jpg", alt: "efapel" },
+          { src: "/assets/logos/courant.png", alt: "courant" },
+          { src: "/assets/logos/sapiselco.png", alt: "sapiselco" },
+          { src: "/assets/logos/panduit-logo.jpg", alt: "panduit-logo" },
+          { src: "/assets/logos/3MLogo.jpg", alt: "3MLogo" },
+          { src: "/assets/logos/PrysmianLogo.jpg", alt: "PrysmianLogo" },
+          { src: "/assets/logos/CellpackLogo.jpg", alt: "CellpackLogo" },
+        ]
+      },
+      {
+        id: "automation-lv",
         title: "Accessoires / Cheminements de câblage",
         description: "Pour tout ce qui concerne les accessoires ...",
         logos: [
@@ -169,29 +196,31 @@ export default {
           { src: "/assets/logos/schneider.png", alt: "Schneider Electric" },
           { src: "/assets/logos/panduit.png", alt: "Panduit" }
         ]
-      }
+      },
     ]
   },
   network: {
     pageTitle: "Matériel de ligne de distribution électrique",
-     intro: `<b>Forte de plus de 25 ans d’expérience terrain en vente internationale et en direction d’entreprise, PRS International repose sur des bases solides alliant savoir-faire industriel et connaissance approfondie des marchés.</b><br/><br/>
+    intro: `Forte de plus de 25 ans d’expérience concrète dans la vente internationale et l’approvisionnement industriel, PRS International s’appuie sur une connaissance approfondie du marché et un savoir-faire opérationnel solide. L’entreprise met à profit des pratiques éprouvées pour proposer des solutions intelligentes, fiables et prêtes à l’export, adaptées aux marchés en forte croissance.<br/><br/>
 
-Son fondateur a exercé des responsabilités commerciales dans des secteurs variés — du négoce B2B à l’exportation de matériel électrique vers la région MENA — et a dirigé plusieurs sociétés spécialisées dans l’approvisionnement technique, notamment plus de dix années dans le Golfe.<br/><br/>
+Nous opérons avec une méthode claire : des prix compétitifs, des sources fiables, une logistique fluide et une communication réactive. Notre engagement : ne pas faire de promesses excessives, mais livrer avec constance — dans la transparence, la performance et des résultats mesurables.<br/><br/>
 
-Cette expérience guide notre méthode : des prix compétitifs, des sources fiables, une logistique fluide et une communication directe. Nos clients nous choisissent non pas pour des promesses, mais pour des résultats concrets, une transparence totale et une fiabilité constante.<br/><br/>
-
-PRS International collabore étroitement avec :<br/>
-
-• Des fabricants reconnus en Europe (France, Pologne, Allemagne, etc.)<br/>
-
-• Des fournisseurs asiatiques respectant les normes techniques export<br/>
-
-• Des transitaires spécialisés dans les expéditions vers le Moyen-Orient et l’Afrique<br/><br/>
-
-<b>Notre priorité : </b> garantir des produits fiables, des livraisons ponctuelles, une documentation complète et conforme — et surtout, les meilleurs prix du marché.`,
+Nous travaillons en étroite collaboration avec des fabricants de confiance en Europe, des fournisseurs conformes en Asie, et des transitaires spécialisés dans les expéditions vers le Moyen-Orient et l’Afrique. Notre priorité est simple : Garantir des produits fiables, des livraisons ponctuelles, une documentation complète — et toujours les meilleurs prix possibles.<br/><br/>`,
     sections: networkSections
   },
   contact: {
-
+    title: "Contact",
+    subtitle: "",
+    description:
+      "Vous souhaitez en savoir plus sur l’un de nos produits ? \n Vous avez une question concernant une commande en cours ? \n Notre équipe est à votre écoute — n’hésitez pas à nous écrire.",
+    emailLabel: "info@prsint.fr",
+    form: {
+      name: "Nom",
+      phone: "Téléphone",
+      email: "Adresse e-mail",
+      subject: "Objet",
+      message: "Comment pouvons-nous vous aider ? N’hésitez pas à nous contacter.",
+      submit: "Envoyer",
+    },
   }
 };

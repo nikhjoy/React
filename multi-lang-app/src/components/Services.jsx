@@ -51,8 +51,16 @@ export default function Services({ text = {} }) {
                 <p className="service-desc" style={{ whiteSpace: "pre-line" }}>{cardDesc}</p>
 
                 {/* localized More link */}
-                <Link to={`/${locale}/services`} className="service-more-btn" aria-label={`More about ${c.title}`}>
-                  {locale === "fr" ? "En savoir plus →" : locale === "esp" ? "Más →" : "More →"}
+                <Link
+                  to={`/${locale}/services`}
+                  className="service-more-btn"
+                  aria-label={`More about ${c.title}`}
+                >
+                  {locale === "fr"
+                    ? "En savoir plus →"
+                    : locale === "esp"
+                      ? "Más →"
+                      : "More →"}
                 </Link>
               </div>
             );

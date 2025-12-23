@@ -16,15 +16,18 @@ export default {
 
   hero: {
     title: "PRS International",
-    description: "PRS International es una empresa francesa fundada con una misión clara...",
+    description: "",
     button: "Saber más"
   },
 
   about: {
     title: "La experiencia francesa en exportación, al servicio de los profesionales exigentes.",
     desc: "",
-    // optional overlayTitle if you use it in About.jsx
     overlayTitle: "Rendimiento,\nCalidad y\nFiabilidad",
+    stats: {
+      years: "Años de experiencia",
+      projects: 25
+    },
 
     // structured details for About section (Spanish)
     details: {
@@ -58,7 +61,7 @@ export default {
   },
   services: {
     title: "⚙️ Nuestros servicios",
-    description: "Nuestro equipo de especialistas utiliza procesos probados y logística moderna para garantizar entregas conformes y puntuales.",
+    description: "Con décadas de experiencia en el sector, nuestro equipo utiliza métodos comprobados y logística moderna para garantizar productos conformes, rastreables y entregados puntualmente — siempre.",
     intro: "",
     cards: [
       {
@@ -121,35 +124,42 @@ export default {
     ]
   },
   network: {
-    pageTitle: "Equipos de línea de distribución",
-    intro: `<b>Con más de 22 años de experiencia directa en ventas internacionales y gestión empresarial, PRS International se basa en una trayectoria sólida y un profundo conocimiento del sector.</b><br/><br/>
+    pageTitle: "",
+    intro: `Con más de 25 años de experiencia directa en ventas internacionales y suministro industrial, PRS International se fundó sobre una base sólida de conocimiento del mercado y saber hacer operativo. Aplicamos décadas de prácticas comprobadas para ofrecer soluciones inteligentes, fiables y listas para exportar, adaptadas a mercados de alto crecimiento.<br/><br/>
 
-Su fundador ha ocupado cargos comerciales en múltiples sectores —desde el comercio B2B hasta la exportación de material eléctrico a la región MENA— y ha dirigido varias empresas especializadas en el suministro técnico, incluyendo más de una década en el Golfo.<br/><br/>
+Operamos con un enfoque claro: precios competitivos, abastecimiento confiable, logística fluida y comunicación ágil. Nuestro compromiso no es hacer promesas vacías, sino entregar resultados constantes — con transparencia, rendimiento y eficacia en cada etapa.<br/><br/>
 
-Esa experiencia impulsa nuestro enfoque: precios competitivos, proveedores fiables, logística fluida y comunicación directa. Nuestros clientes nos eligen no por promesas, sino por resultados, transparencia y compromiso constante.<br/><br/>
-
-PRS International colabora estrechamente con: <br/>
-
-• Fabricantes líderes en Europa (Francia, Polonia, Alemania, etc.)<br/>
-
-• Proveedores asiáticos que cumplen con las normas técnicas internacionales<br/>
-
-• Transitarios especializados en envíos al Oriente Medio y África<br/><br/>
-
-<b>Nuestra prioridad:  </b> garantizar productos fiables, entregas puntuales, documentación completa y conforme — y sobre todo, los mejores precios posibles.`,
+Trabajamos en estrecha colaboración con fabricantes de confianza en Europa, proveedores conformes en Asia y transitarios especializados en envíos hacia Oriente Medio y África. Nuestra prioridad es simple: Garantizar productos fiables, entregas puntuales, documentación completa — y siempre los mejores precios posibles.<br/><br/>`,
     sections: networkSections
   },
   featureHero: {
-    eyebrow: "POWER, OIL & GAS",
-    title: "Precisión en la demostración de la excelencia en energía,\npetóleo y gas"
+    eyebrow: "La energía no tiene fronteras. La experiencia lleva una firma.",
+    title: "Todo comienza con una exigencia: el dominio del detalle técnico, perfeccionado en Francia.\n En PRS International, no solo enviamos material eléctrico; llevamos una promesa de fiabilidad a escala mundial."
   },
 
   footer: {
-    bannerTitleLine1: "Proveedores de servicios innovadores y fiables",
+    bannerTitleLine1: "Proveedores de productos innovadores y fiables",
     bannerTitleLine2: "PRS International",
     email: "info@prsint.fr",
     about: "Sobre Nosotros",
     services: "Nuestros Servicios",
-    logoAlt: "PRS International"
+    logoAlt: "PRS International",
+    contact: "Contáctenos"
+  },
+  contact: {
+  title: "Contáctenos",
+  subtitle: "",
+  description:
+    "¿Desea obtener más información sobre alguno de nuestros productos? \n ¿Tiene preguntas sobre un pedido en curso? \n Nuestro equipo está a su disposición — no dude en escribirnos.",
+  emailLabel: "info@prsint.fr",
+  form: {
+    name: "Nombre",
+    phone: "Teléfono",
+    email: "Correo electrónico",
+    subject: "Asunto",
+    message: "¿Cómo podemos ayudarle? No dude en ponerse en contacto con nosotros.",
+    submit: "Enviar",
+  },
+
   }
 };

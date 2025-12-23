@@ -1,5 +1,5 @@
 import React from "react";
-import heroBg from "../assets/images/c2.png";
+import heroBg from "../assets/images/sky.png";
 
 export default function FeatureHero({ text = {} }) {
   const eyebrow = text.eyebrow || "POWER, OIL & GAS";

@@ -1,9 +1,11 @@
 // src/components/Footer.jsx
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import logo from "../assets/images/PRS-LOGO-W.png";
+import logo from "../assets/images/prs_02.png";
 import { texts } from "../text";
 import { getLocaleFromPath } from "../utils/locale";
+import footerBg from "../assets/images/section_bg_4.png";
+
 
 export default function Footer() {
   const { pathname } = useLocation();
@@ -14,11 +16,13 @@ export default function Footer() {
 
   return (
     <>
-      <div className="footer-green-top">
-        <div className="footer-green-inner">
+      <div className="footer-image-banner" style={{ backgroundImage: `url(${footerBg})` }}>
+        <div className="footer-image-content">
           <h2 className="footer-banner-title">
-            {t.bannerTitleLine1 || "Fournisseurs de services innovants et fiables"}<br />
-            <span>{t.bannerTitleLine2 || "PRS International"}</span>
+            {t.bannerTitleLine1}
+            <span className="footer-banner-brand">
+              {t.bannerTitleLine2}
+            </span>
           </h2>
           <div className="footer-banner-underline" />
         </div>
@@ -32,18 +36,23 @@ export default function Footer() {
 
           <div className="footer-col footer-contact left-align">
             <a href={`mailto:${t.email || "info@prsint.fr"}`} className="footer-email">{t.email || "info@prsint.fr"}</a>
-
-            <div className="footer-address">
-              <strong>PRS International SAS</strong><br/>
-              224 boulevard du Moulin de la Tour<br/>
-              92140 Clamart, France
-            </div>
           </div>
 
           <div className="footer-col footer-links">
             <Link to={toLocalePath()} className="footer-link">{t.about || "À propos de nous"}</Link>
             <Link to={toLocalePath("services")} className="footer-link">{t.services || "Nos services"}</Link>
-            <div className="footer-menu-icon">⋮</div>
+            <div className="footer-menu">
+              <div className="footer-menu-icon">⋮</div>
+
+              <Link
+                to={toLocalePath("contact")}
+                className="footer-menu-dropdown"
+              >
+                {t.contact || "Contactez-nous"}
+              </Link>
+            </div>
+
+
           </div>
         </div>
 
