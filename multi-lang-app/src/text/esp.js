@@ -1,8 +1,8 @@
 // src/text/esp.js
 import { networkSections } from "./networkSections";
-import eiffel from "../assets/images/eiffel.svg";
-import engineering from "../assets/images/engineering.svg";
-import store from "../assets/images/store.svg";
+import eiffel from "../assets/images/1.svg";
+import engineering from "../assets/images/2.svg";
+import store from "../assets/images/3.svg";
 
 export default {
   header: {
@@ -16,8 +16,8 @@ export default {
 
   hero: {
     title: "PRS International",
-    description: "",
-    button: "Saber más"
+    description: "Exportador europeo de equipos y repuestos eléctricos, mecánicos e industriales",
+    button: "Hablemos de su proyecto"
   },
 
   about: {
@@ -26,7 +26,8 @@ export default {
     overlayTitle: "Rendimiento,\nCalidad y\nFiabilidad",
     stats: {
       years: "Años de experiencia",
-      projects: 25
+      projects: 25,
+       note: "Nuestro equipo reúne más de 25 años de experiencia práctica en la exportación de equipos y repuestos eléctricos, mecánicos e industriales a nivel mundial."
     },
 
     // structured details for About section (Spanish)
@@ -39,9 +40,9 @@ export default {
         values: "Nuestros valores"
       },
 
-      who: `PRS International es una empresa francesa fundada con una misión clara: facilitar, estructurar y asegurar la exportación de material eléctrico industrial hacia mercados en expansión. Nuestra ambición es ser una plataforma de confianza que conecte fabricantes fiables de Europa y Asia con una clientela exigente, principalmente en Oriente Medio y África.`,
+      who: `PRS International es una empresa francesa fundada con una misión clara: simplizar, estructurar y asegurar la exportación de equipos y repuestos eléctricos, mecánicos e industriales hacia mercados de alto crecimiento. Nuestra ambición es convertirnos en una plataforma de confianza que conecte fabricantes fiables de Europa y Asia con una clientela exigente, principalmente en Oriente Medio y África.`,
 
-      mission: `Ofrecer a clientes industriales, tanto públicos como privados, soluciones de abastecimiento fiables y conformes. Gracias a nuestra experiencia en logística y procedimientos de exportación, simplificamos el proceso de compra garantizando una alta calidad en los productos entregados.`,
+      mission: `Acompañamos a clientes del sector público y privado ofreciendo soluciones de abastecimiento fiables y totalmente conformes para equipos y repuestos eléctricos, mecánicos e industriales. Gracias a nuestra amplia experiencia en logística y procesos de exportación, optimizamos el proceso de compra garantizando al mismo tiempo la máxima calidad de los productos.`,
 
       strengths: [
         "Base operativa en Francia, en el corazón de la Unión Europea",
@@ -60,14 +61,14 @@ export default {
     }
   },
   services: {
-    title: "⚙️ Nuestros servicios",
+    title: " Nuestros servicios",
     description: "Con décadas de experiencia en el sector, nuestro equipo utiliza métodos comprobados y logística moderna para garantizar productos conformes, rastreables y entregados puntualmente — siempre.",
     intro: "",
     cards: [
       {
         icon: eiffel,
-        title: "Suministro de material eléctrico",
-        desc: "PRS International ofrece una gama completa de productos eléctricos industriales, seleccionados por su fiabilidad y conformidad.",
+        title: "Distribución de equipos eléctricos, industriales y repuestos para la construcción",
+        desc: "PRS International ofrece una gama completa de equipos y repuestos eléctricos, mecánicos e industriales, cuidadosamente seleccionados por su fiabilidad, conformidad internacional y precios competitivos.",
         link: "/services"
       },
       {
@@ -85,14 +86,16 @@ export default {
     ],
     long: [
       {
-        heading: "1. Suministro de material eléctrico",
+        heading: "1. Distribución de equipos eléctricos, industriales y repuestos para la construcción",
         paragraph:
-          "PRS International ofrece una gama completa de productos eléctricos industriales, seleccionados por su fiabilidad, conformidad con las normas internacionales y precios competitivos. Actualizamos constantemente nuestro catálogo según las necesidades específicas de nuestros clientes en los sectores de energía, construcción, industria e infraestructuras.",
+          "PRS International ofrece una gama completa de equipos y repuestos eléctricos, mecánicos e industriales, incluyendo repuestos industriales y equipos técnicos para los sectores de la construcción, la minería y la industria pesada a nivel mundial. Cuidadosamente seleccionados por su fiabilidad, conformidad internacional y precios competitivos, nuestras soluciones están adaptadas a las necesidades específicas de nuestros clientes en los sectores de la energía, la construcción, la industria y las infraestructuras.",
         bullets: [
+          "Maquinaria industrial y repuestos: Motores, reductores, bombas, compresores, componentes hidráulicos, rodamientos, filtros y repuestos OEM o equivalentes para la construcción, la minería y la industria pesada",
           "Cables eléctricos: BT, MT, AT, armados, subterráneos, solares, de mando, de control, de instrumentación, ignífugos",
           "Sistemas de canalización: tubos EMT, GI, flexibles, bandejas perforadas o tipo rejilla, abrazaderas, varillas roscadas, accesorios de fijación",
           "Accesorios de cableado: prensaestopas, terminales, conectores, manguitos, bornas, kits de empalme y terminación",
           "Cuadros eléctricos y distribución: cuadros modulares, armarios industriales, disyuntores, interruptores diferenciales, contactores, relés, contadores",
+          "Soluciones de medición: Contadores de agua inteligentes, caudalímetros electromagnéticos y ultrasónicos, medidores eléctricos, sistemas AMR/AMI y módulos de comunicación asociados.",
           "Equipos de potencia: transformadores secos o en aceite, celdas MT, barras, baterías de condensadores",
           "Puesta a tierra y protección: picas de tierra, cables desnudos, trenzas, pararrayos, protectores de sobretensión, conectores de tierra",
           "Iluminación técnica: proyectores LED, iluminación ATEX, balizas de emergencia, iluminación de mantenimiento",
@@ -125,20 +128,35 @@ export default {
   },
   network: {
     pageTitle: "",
-    intro: `Con más de 25 años de experiencia directa en ventas internacionales y suministro industrial, PRS International se fundó sobre una base sólida de conocimiento del mercado y saber hacer operativo. Aplicamos décadas de prácticas comprobadas para ofrecer soluciones inteligentes, fiables y listas para exportar, adaptadas a mercados de alto crecimiento.<br/><br/>
+    intro: `Con más de 25 años de experiencia práctica en ventas internacionales y suministro industrial, PRS International fue fundada sobre un profundo conocimiento del mercado y un sólido saber hacer operativo. Nuestra empresa se basa en décadas de prácticas comprobadas sobre el terreno para ofrecer soluciones inteligentes, fiables y preparadas para la exportación de equipos y repuestos eléctricos, mecánicos e industriales, adaptadas a mercados de alto crecimiento.<br/><br/>
 
 Operamos con un enfoque claro: precios competitivos, abastecimiento confiable, logística fluida y comunicación ágil. Nuestro compromiso no es hacer promesas vacías, sino entregar resultados constantes — con transparencia, rendimiento y eficacia en cada etapa.<br/><br/>
 
 Trabajamos en estrecha colaboración con fabricantes de confianza en Europa, proveedores conformes en Asia y transitarios especializados en envíos hacia Oriente Medio y África. Nuestra prioridad es simple: Garantizar productos fiables, entregas puntuales, documentación completa — y siempre los mejores precios posibles.<br/><br/>`,
+    sectionTitles: {
+      industrial: "Maquinaria industrial y repuestos",
+      electric: "Cables eléctricos",
+      safety: "Herramientas y equipos de protección personal",
+      trays: "Bandejas portacables y accesorios",
+      medium: "Subestaciones de media tensión",
+      electromechanical: "Equipos electromecánicos",
+      metering: "Soluciones de medición ",
+      lighting: "Luminarias y equipos de iluminación",
+      automation: "Equipos de automatización y baja tensión",
+      medium2: "Equipos para líneas de distribución de media tensión",
+      explosion: "Equipos antideflagrantes",
+      power: "Fuentes de energía",
+
+    },
     sections: networkSections
   },
   featureHero: {
-    eyebrow: "La energía no tiene fronteras. La experiencia lleva una firma.",
-    title: "Todo comienza con una exigencia: el dominio del detalle técnico, perfeccionado en Francia.\n En PRS International, no solo enviamos material eléctrico; llevamos una promesa de fiabilidad a escala mundial."
+    eyebrow: "LA ENERGÍA NO CONOCE FRONTERAS. \n LA EXPERIENCIA TIENE UNA FIRMA.",
+    title: "Todo comienza con una exigencia: la precisión técnica, dominada en Francia. En PRS International, no solo suministramos equipos y repuestos eléctricos, mecánicos e industriales — ofrecemos una promesa global de fiabilidad."
   },
 
   footer: {
-    bannerTitleLine1: "Proveedores de productos innovadores y fiables",
+    bannerTitleLine1: "Precisión en el suministro. Confianza en la entrega.",
     bannerTitleLine2: "PRS International",
     email: "info@prsint.fr",
     about: "Sobre Nosotros",
@@ -147,19 +165,19 @@ Trabajamos en estrecha colaboración con fabricantes de confianza en Europa, pro
     contact: "Contáctenos"
   },
   contact: {
-  title: "Contáctenos",
-  subtitle: "",
-  description:
-    "¿Desea obtener más información sobre alguno de nuestros productos? \n ¿Tiene preguntas sobre un pedido en curso? \n Nuestro equipo está a su disposición — no dude en escribirnos.",
-  emailLabel: "info@prsint.fr",
-  form: {
-    name: "Nombre",
-    phone: "Teléfono",
-    email: "Correo electrónico",
-    subject: "Asunto",
-    message: "¿Cómo podemos ayudarle? No dude en ponerse en contacto con nosotros.",
-    submit: "Enviar",
-  },
+    title: "Contáctenos",
+    subtitle: "",
+    description:
+      "¿Desea obtener más información sobre alguno de nuestros productos? \n ¿Tiene preguntas sobre un pedido en curso? \n Nuestro equipo está a su disposición — no dude en escribirnos.",
+    emailLabel: "info@prsint.fr",
+    form: {
+      name: "Nombre",
+      phone: "Teléfono",
+      email: "Correo electrónico",
+      subject: "Asunto",
+      message: "¿Cómo podemos ayudarle? No dude en ponerse en contacto con nosotros.",
+      submit: "Enviar",
+    },
 
   }
 };

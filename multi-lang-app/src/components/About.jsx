@@ -119,16 +119,9 @@ export default function About({ text = {} }) {
         </div>
 
         <div className="about-right">
-       
+
           <h4 className="about-title">{title || "Notre expertise et\nnotre adaptabilité"}</h4>
           <div className="about-stats" ref={statsRef}>
-            {/*<div className="stat">
-              <div className="stat-label">Years</div>
-              <div className="stat-number">
-                <AnimatedCounter target={countries} start={startCounters} duration={1200} />
-                <span className="plus">+</span>
-              </div>
-            </div>*/}
 
             <div className="stat">
               <div className="stat-label">{text?.stats?.years || "Years of Experience"}</div>
@@ -138,6 +131,11 @@ export default function About({ text = {} }) {
               </div>
             </div>
           </div>
+
+          <p className="about-stat-note">
+            {text?.stats?.note ||
+              "This represents the cumulative experience of the team in industrial electrical supply and international export."}
+          </p>
 
           <div className="details-block">
             <h4>{details.labels?.who || "Who we are"}</h4>

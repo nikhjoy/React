@@ -1,7 +1,7 @@
 import { networkSections } from "./networkSections";
-import eiffel from "../assets/images/eiffel.svg";
-import engineering from "../assets/images/engineering.svg";
-import store from "../assets/images/store.svg";
+import eiffel from "../assets/images/1.svg";
+import engineering from "../assets/images/2.svg";
+import store from "../assets/images/3.svg";
 
 export default {
   header: {
@@ -14,8 +14,8 @@ export default {
   },
   hero: {
     title: "PRS International",
-    description: "",
-    button: "En savoir plus"
+    description: "Exportateur européen d’équipements et de pièces de rechange électriques, mécaniques et industrielles",
+    button: "Discutons de votre projet"
   },
   about: {
     title: "L’expertise française en export, au service des professionnels exigeants.",
@@ -23,7 +23,8 @@ export default {
     overlayTitle: "Performance,\nQualité et\nFiabilité",
     stats: {
       years: "Années d’expérience",
-      projects: 25
+      projects: 25,
+      note: "Notre équipe cumule plus de 25 ans d’expérience concrète dans l’exportation d’équipements et de pièces de rechange électriques, mécaniques et industrielles à travers le monde."
     },
 
     // new structured details (French)
@@ -36,9 +37,9 @@ export default {
         values: "Nos valeurs"
       },
 
-      who: `PRS International est une société française fondée avec une mission claire : faciliter, structurer et sécuriser l’exportation de matériel électrique industriel vers les marchés en forte croissance. Notre ambition est de devenir une plateforme de confiance, capable de relier les fabricants rigoureux d’Europe et d’Asie à une clientèle exigeante implantée principalement au Moyen-Orient et en Afrique.`,
+      who: `PRS International est une entreprise française fondée avec une mission claire : simplifier, structurer et sécuriser l’exportation d’équipements et de pièces de rechange électriques, mécaniques et industrielles vers des marchés à forte croissance. Notre ambition est de devenir une plateforme de confiance reliant des fabricants fiables en Europe et en Asie à une clientèle exigeante, principalement basée au Moyen-Orient et en Afrique.`,
 
-      mission: `Mettre à disposition des industriels et des acteurs publics ou privés des solutions d’approvisionnement complètes, fiables et conformes aux exigences internationales. Grâce à notre maîtrise des flux logistiques et réglementaires, nous simplifions les processus d’achat pour nos clients, tout en assurant un haut niveau de qualité sur les produits livrés.`,
+      mission: `Nous accompagnons les clients des secteurs public et privé en leur proposant des solutions d’approvisionnement fiables et entièrement conformes pour des équipements et des pièces de rechange électriques, mécaniques et industrielles. Grâce à notre expertise approfondie en logistique et en procédures d’exportation, nous simplifions le processus d’achat tout en garantissant la plus haute qualité des produits.`,
 
       strengths: [
         "Une base opérationnelle en France, au cœur de l’Union européenne",
@@ -57,14 +58,14 @@ export default {
     }
   },
   services: {
-    title: "⚙️ Nos activités",
+    title: " Nos Services",
     description: "Fort de plusieurs décennies d’expertise sectorielle, notre équipe applique des méthodes éprouvées et une logistique moderne pour garantir des produits conformes, traçables et livrés dans les délais — à chaque fois.",
     intro: "",
     cards: [
       {
         icon: eiffel,
-        title: "Fourniture de matériel électrique",
-        desc: "PRS International propose une offre complète de produits électriques industriels, sélectionnés pour leur fiabilité et conformité.",
+        title: "Distribution d’équipements électriques, industriels et pièces de rechange pour le BTP",
+        desc: "PRS International propose une gamme complète d’équipements et de pièces de rechange électriques, mécaniques et industrielles, soigneusement sélectionnés pour leur fiabilité, leur conformité aux normes internationales et leur compétitivité.",
         link: "/services"
       },
       {
@@ -82,14 +83,16 @@ export default {
     ],
     long: [
       {
-        heading: "1. Fourniture de matériel électrique",
+        heading: "1. Distribution d’équipements électriques, industriels et pièces de rechange pour le BTP",
         paragraph:
-          "PRS International propose une offre complète de produits électriques industriels, sélectionnés pour leur fiabilité, leur conformité aux normes internationales et leur disponibilité à des prix compétitifs. Nous adaptons continuellement notre catalogue aux besoins spécifiques de nos clients dans les secteurs de l’énergie, du bâtiment, de l’industrie et des infrastructures.",
+          "PRS International propose une gamme complète d’équipements et de pièces de rechange électriques, mécaniques et industrielles, incluant des pièces de rechange industrielles et des équipements techniques destinés aux secteurs de la construction, de l’exploitation minière et de l’industrie lourde à l’échelle mondiale. Soigneusement sélectionnées pour leur fiabilité, leur conformité aux normes internationales et leur compétitivité, nos solutions sont adaptées aux besoins spécifiques de nos clients dans les secteurs de l’énergie, de la construction, de l’industrie et des infrastructures.",
         bullets: [
+          "Machines industrielles & pièces de rechange: Moteurs, réducteurs, pompes, compresseurs, composants hydrauliques, roulements, filtres, ainsi que pièces de rechange OEM ou équivalentes pour la construction, l’exploitation minière et l’industrie lourde.",
           "Câbles électriques : basse tension (BT), moyenne tension (MT), haute tension (HT), câbles armés, souterrains, photovoltaïques, de commande, de contrôle, instrumentation, câbles ignifugés",
           "Systèmes de cheminement : conduits métalliques rigides (EMT, GI), gaines flexibles, chemins de câbles perforés ou grillagés, fixations, colliers, tiges filetées, accessoires de suspension",
           "Accessoires de câblage : presse-étoupes, embouts, cosses, manchons, borniers, connecteurs, kits de jonction et de terminaison",
           "Tableaux et distribution : coffrets modulaires, armoires industrielles, disjoncteurs, interrupteurs différentiels, contacteurs, relais, compteurs",
+          "Solutions de comptage: Compteurs d’eau intelligents, débitmètres électromagnétiques et ultrasoniques, compteurs électriques, systèmes AMR/AMI et modules de communication associés.",
           "Équipements de puissance : transformateurs secs ou immergés, cellules MT, jeux de barres, batteries de condensateurs",
           "Mise à la terre et protection : piquets de terre, câbles nus, tresses de masse, parafoudres, paratonnerres, connecteurs de terre",
           "Éclairage technique : projecteurs LED, éclairages ATEX, balises de sécurité, éclairage d’urgence",
@@ -121,11 +124,11 @@ export default {
     ]
   },
   featureHero: {
-    eyebrow: "L’énergie n’a pas de frontières. L’expertise a une signature.",
-    title: "Tout commence par une exigence : celle du détail technique maîtrisé en France.\nChez PRS International, nous ne livrons pas uniquement du matériel électrique ; nous portons une promesse de fiabilité à l’échelle mondiale."
+    eyebrow: "L’ÉNERGIE NE CONNAÎT PAS DE FRONTIÈRES. \n L’EXPERTISE PORTE UNE SIGNATURE.",
+    title: "Tout commence par une exigence : la précision technique, maîtrisée en France. Chez PRS International, nous ne nous contentons pas de fournir des équipements et des pièces de rechange électriques, mécaniques et industrielles — nous délivrons une promesse mondiale de fiabilité."
   },
   footer: {
-    bannerTitleLine1: "Fournisseurs de produits innovants et fiables",
+    bannerTitleLine1: "Précision dans l’approvisionnement. Confiance dans la livraison.",
     bannerTitleLine2: "PRS International",
     email: "info@prsint.fr",
     about: "À propos de nous",
@@ -201,11 +204,27 @@ export default {
   },
   network: {
     pageTitle: "Matériel de ligne de distribution électrique",
-    intro: `Forte de plus de 25 ans d’expérience concrète dans la vente internationale et l’approvisionnement industriel, PRS International s’appuie sur une connaissance approfondie du marché et un savoir-faire opérationnel solide. L’entreprise met à profit des pratiques éprouvées pour proposer des solutions intelligentes, fiables et prêtes à l’export, adaptées aux marchés en forte croissance.<br/><br/>
+    intro: `Fort de plus de 25 ans d’expérience concrète dans les ventes internationales et l’approvisionnement industriel, PRS International a été fondée sur une connaissance approfondie des marchés et un savoir-faire opérationnel. Notre entreprise s’appuie sur des décennies de pratiques éprouvées sur le terrain pour proposer des solutions intelligentes, fiables et prêtes à l’export pour des équipements et des pièces de rechange électriques, mécaniques et industrielles, adaptées aux marchés à forte croissance.<br/><br/>
 
 Nous opérons avec une méthode claire : des prix compétitifs, des sources fiables, une logistique fluide et une communication réactive. Notre engagement : ne pas faire de promesses excessives, mais livrer avec constance — dans la transparence, la performance et des résultats mesurables.<br/><br/>
 
 Nous travaillons en étroite collaboration avec des fabricants de confiance en Europe, des fournisseurs conformes en Asie, et des transitaires spécialisés dans les expéditions vers le Moyen-Orient et l’Afrique. Notre priorité est simple : Garantir des produits fiables, des livraisons ponctuelles, une documentation complète — et toujours les meilleurs prix possibles.<br/><br/>`,
+    sectionTitles: {
+      industrial: "Machines industrielles & pièces de rechange",
+      electric: "Cables électriques",
+      safety: "Outils et équipements de protection",
+      trays: "Accessoires / Cheminements de câblage",
+      medium: "Postes de transformation",
+      electromechanical: "Equipements électromécanique",
+      metering: "Solutions de comptage",
+      lighting: "Appareils et sources d’éclairage",
+      automation: "Equipements basse tension et contrôle industriel",
+      medium2: "Matériel de ligne de distribution électrique",
+      explosion: "Matériels Antidéflagrant",
+      power: " Sources d’énergie",
+
+
+    },
     sections: networkSections
   },
   contact: {

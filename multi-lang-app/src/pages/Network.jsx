@@ -2,7 +2,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { texts } from "../text"; // your texts index export
-
+import FloatingContactButton from "../components/FloatingContactButton";
 // Bulk import all images from src/assets/logos using Vite
 // NOTE: path is relative to this file. Adjust if your folder structure differs.
 const modules = import.meta.glob('../assets/logos/*.{png,jpg,jpeg,svg}', { eager: true });
@@ -56,59 +56,64 @@ export default function Network() {
   };
 
   return (
-    <main className="network-page">
-      <div className="container">
+    <>
+      <main className="network-page">
+        <div className="container">
 
-        {/* Page header */}
-        <header className="network-header">
-          <h1 className="network-title"></h1>
-          {t.intro && <p
-  className="network-intro"
-  dangerouslySetInnerHTML={{ __html: t.intro }}
-></p>
-}
-        </header>
+          {/* Page header */}
+          <header className="network-header">
+            <h1 className="network-title"></h1>
+            {t.intro && <p
+              className="network-intro"
+              dangerouslySetInnerHTML={{ __html: t.intro }}
+            ></p>
+            }
+          </header>
 
-        {/* Sections (dynamic) */}
-        {Array.isArray(t.sections) && t.sections.map((section, si) => (
-          <section className="network-section" key={si} id={section.id || `section-${si}`}>
-            <div className="section-head">
-              <h2 className="section-title">{section.title}</h2>
-              {section.description && <p className="section-desc">{section.description}</p>}
-            </div>
+          {/* Sections (dynamic) */}
+          {Array.isArray(t.sections) && t.sections.map((section, si) => (
+            <section className="network-section" key={si} id={section.id || `section-${si}`}>
+              <div className="section-head">
+                <h2 className="section-title">
+                  {t.sectionTitles[section.id]}
+                </h2>
+                {section.description && <p className="section-desc">{section.description}</p>}
+              </div>
 
-            {/* logos grid */}
-            <div className="network-grid">
-              {Array.isArray(section.logos) && section.logos.map((logo, li) => {
-                const src = resolveLogoSrc(logo);
-                return (
-                  <div className="logo-item" key={li}>
-                    {src ? (
-                      <img
-                        src={src}
-                        alt={logo.alt || `partner-${li}`}
-                        onError={(e) => {
-                          console.warn("logo failed to load:", src);
-                          // show placeholder if available; else hide
-                          if (PLACEHOLDER) e.currentTarget.src = PLACEHOLDER;
-                          else e.currentTarget.style.display = "none";
-                        }}
-                      />
-                    ) : (
-                      // fallback visual if not found
-                      <div className="logo-missing" title={logo.alt || logo.file || ""}>
-                        {logo.alt || logo.file || "logo"}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-        ))}
+              {/* logos grid */}
+              <div className="network-grid">
+                {Array.isArray(section.logos) && section.logos.map((logo, li) => {
+                  const src = resolveLogoSrc(logo);
+                  return (
+                    <div className="logo-item" key={li}>
+                      {src ? (
+                        <img
+                          src={src}
+                          alt={logo.alt || `partner-${li}`}
+                          onError={(e) => {
+                            console.warn("logo failed to load:", src);
+                            // show placeholder if available; else hide
+                            if (PLACEHOLDER) e.currentTarget.src = PLACEHOLDER;
+                            else e.currentTarget.style.display = "none";
+                          }}
+                        />
+                      ) : (
+                        // fallback visual if not found
+                        <div className="logo-missing" title={logo.alt || logo.file || ""}>
+                          {logo.alt || logo.file || "logo"}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          ))}
 
-      </div>
-    </main>
+        </div>
+      </main>
+      <FloatingContactButton text={texts[locale]?.hero || texts.fr.hero} />
+    </>
   );
 }
 

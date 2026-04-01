@@ -1,9 +1,11 @@
 // src/components/Services.jsx
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import defaultEiffel from "../assets/images/eiffel.svg";
-import defaultEngineering from "../assets/images/engineering.svg";
-import defaultStore from "../assets/images/store.svg";
+import defaultEiffel from "../assets/images/1.svg";
+import defaultEngineering from "../assets/images/2.svg";
+import defaultStore from "../assets/images/3.svg";
+import servicesIcon from "../assets/images/serv1.svg";
+
 
 export default function Services({ text = {} }) {
   const { eyebrow, title, description, cards } = text;
@@ -31,7 +33,20 @@ export default function Services({ text = {} }) {
       <div className="container">
         <div className="services-header">
           <div className="services-left">
-            <h2 className="services-title">{title || (locale === "fr" ? "Portefeuille de services" : "Service Portfolio")}</h2>
+            <h2 className="services-title">
+              <img
+                src={servicesIcon}
+                alt=""
+                className="services-title-icon"
+                aria-hidden="true"
+              />
+              <span>
+                {title || (locale === "fr"
+                  ? "Portefeuille de services"
+                  : "Service Portfolio")}
+              </span>
+            </h2>
+
           </div>
 
           <div className="services-right">

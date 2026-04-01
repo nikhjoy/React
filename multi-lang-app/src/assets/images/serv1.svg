@@ -1,0 +1,10 @@
+<svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clipboard -->
+  <rect x="14" y="10" width="36" height="44" rx="4" stroke="#0E2414" stroke-width="3"></rect>
+
+  <!-- Clipboard top -->
+  <rect x="24" y="4" width="16" height="10" rx="3" stroke="#0E2414" stroke-width="3"></rect>
+
+  <!-- Checkmark -->
+  <path d="M24 34 L30 40 L42 26" stroke="#0E2414" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

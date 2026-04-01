@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import logo from "../assets/images/prs_02.png";
+import logo from "../assets/images/prs_05.png";
 import { texts } from "../text";
 import { getLocaleFromPath } from "../utils/locale";
 import footerBg from "../assets/images/section_bg_4.png";

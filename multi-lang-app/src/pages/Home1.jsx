@@ -2,25 +2,21 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { texts } from "../text";
 
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Services from "../components/Services";
 import FeatureHero from "../components/FeatureHero";
-import FloatingContactButton from "../components/FloatingContactButton";
 
-export default function Home() {
+export default function Home1() {
   const { locale = "fr" } = useParams();
   const t = texts[locale] || texts.fr;
 
   return (
     <div className="home-page">
-      <Hero text={t.hero} />
+      <Hero text={t.hero} variant="test" />
       <About text={t.about} />
       <Services text={t.services} />
       <FeatureHero text={t.featureHero} />
-      {/* FLOATING CONTACT BUTTON */}
-      <FloatingContactButton text={t.hero} />
     </div>
   );
 }

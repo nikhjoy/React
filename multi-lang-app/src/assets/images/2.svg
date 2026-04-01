@@ -1,0 +1,21 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+
+  <!-- Globe -->
+  <circle cx="32" cy="28" r="14" fill="none" stroke="#0E2414" stroke-width="3"></circle>
+
+  <!-- Globe lines -->
+  <path d="M18 28 H46" stroke="#0E2414" stroke-width="2"></path>
+
+  <path d="M32 14
+           C26 20, 26 36, 32 42
+           C38 36, 38 20, 32 14 Z" fill="none" stroke="#0E2414" stroke-width="2"></path>
+
+  <!-- Box -->
+  <rect x="18" y="40" width="28" height="14" rx="2" ry="2" fill="none" stroke="#0E2414" stroke-width="3"></rect>
+
+  <!-- Arrow -->
+  <path d="M46 36 H58
+           M58 36 L54 32
+           M58 36 L54 40" fill="none" stroke="#0E2414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
